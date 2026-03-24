@@ -1,40 +1,29 @@
 // Write your code here
-//! Step 1: Create the products array
+// Step 1: Create the products array
 let products = ["Laptop", "Phone", "Headphones", "Monitor"];
 
-//! Step 2: Function to log the first product
+// Step 2: Function to log the first product
 function logFirstProduct() {
-  console.log(products[0]);
+  return products[0];
 }
 
-//! Step 3: Function to add a new product
+// Step 3: Function to add a new product
 function addProduct(productName) {
   products.push(productName);
+  return products;
 }
 
-//! Step 4: Function to update a product name
+// Step 4: Function to update a product name
 function updateProductName(position, newName) {
   products[position] = newName;
+  return products;
 }
 
-//! Step 5: Function to remove the last product
+// Step 5: Function to remove the last product
 function removeLastProduct() {
   products.pop();
+  return products;
 }
-
-
-//! Test my functions
-logFirstProduct(); // Laptop
-
-addProduct("Mouse");
-console.log(products);
-
-updateProductName(1, "Iphone");
-console.log(products);
-
-removeLastProduct();
-console.log(products);
-
 
 // Export the necessary parts for testing
 module.exports = {
